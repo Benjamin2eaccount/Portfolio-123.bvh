@@ -124,16 +124,6 @@ section{padding:88px 6%}
 .ph-row:nth-child(5){width:80%;animation-delay:.6s}
 @keyframes rp{0%,100%{opacity:1}50%{opacity:.45}}
 .ph-btn{margin-top:3px;background:rgba(255,100,0,.35);border-radius:4px;font-size:.4rem;font-weight:800;letter-spacing:1px;color:rgba(255,160,0,.9);text-align:center;padding:3px 0}
-/* PSL */
-.psl-wrap{position:absolute;inset:0;background:linear-gradient(135deg,#1a1505,#241b00);display:flex;flex-direction:column;align-items:center;justify-content:center;gap:5px}
-.psl-shell{width:86px;background:#111;border-radius:16px;border:2px solid rgba(255,215,0,.25);padding:5px 7px 9px;display:flex;flex-direction:column;gap:4px}
-.psl-top{font-size:.44rem;font-weight:800;letter-spacing:1.5px;color:rgba(255,215,0,.5);text-align:center}
-.psl-num{font-size:1.8rem;font-weight:900;background:linear-gradient(135deg,#ffd700,#ff8c00);-webkit-background-clip:text;-webkit-text-fill-color:transparent;text-align:center;line-height:1.1}
-.psl-stars{font-size:.75rem;color:#ffd700;text-align:center;letter-spacing:2px}
-.psl-bw{display:flex;flex-direction:column;gap:3px}
-.psl-bl{font-size:.4rem;color:rgba(255,215,0,.4);letter-spacing:.4px}
-.psl-b{height:3px;background:rgba(255,215,0,.1);border-radius:2px;overflow:hidden}
-.psl-bf{height:100%;background:linear-gradient(90deg,#ffd700,#ff8c00);border-radius:2px}
 
 .pcard-body{padding:1.2rem 1.3rem .7rem;flex:1}
 .ptags{display:flex;gap:.3rem;flex-wrap:wrap;margin-bottom:.6rem}
