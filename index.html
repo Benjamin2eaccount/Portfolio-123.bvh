@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>Benjamin van Hemert | Developer</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav id="navbar">
+  <div class="nav-logo">BvH.</div>
+  <ul class="nav-links" id="navLinks">
+    <li><a href="index.html" class="active">Home</a></li>
+    <li><a href="projects.html">Projects</a></li>
+    <li><a href="contact.html" class="nav-cta">Contact</a></li>
+  </ul>
+  <div class="hamburger" id="hamburger" onclick="toggleMenu()"><span></span><span></span><span></span></div>
+</nav>
+
+<!-- HERO -->
+<section id="hero">
+  <canvas id="stars"></canvas>
+  <div class="hero-glow"></div>
+  <div class="hero-content">
+    <div class="hero-avatar-wrap">
+      <img class="hero-avatar" src="Photos/Profile-Picture.jpg" alt="Benjamin van Hemert">
+      <div class="avatar-ring"></div>
+    </div>
+    <div class="hero-badge">Open to Work</div>
+    <h1 class="hero-title">Benjamin<br><span class="name">van Hemert</span></h1>
+    <p class="hero-role">Web Developer &amp; Software Creator</p>
+    <p class="hero-desc">I build professional websites, desktop games, and mobile applications. Based in Rosmalen, Netherlands — available for freelance and full-time roles.</p>
+    <div class="hero-btns">
+      <a href="projects.html" class="btn btn-primary">View My Work</a>
+      <a href="contact.html" class="btn btn-outline">Get In Touch</a>
+    </div>
+    <div class="hero-stats">
+      <div class="stat"><div class="stat-n">8+</div><div class="stat-l">Projects</div></div>
+      <div class="stat"><div class="stat-n">4</div><div class="stat-l">Live Sites</div></div>
+      <div class="stat"><div class="stat-n">4</div><div class="stat-l">Apps &amp; Games</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section id="about-home">
+  <div class="inner">
+    <div class="section-header fade-in">
+      <span class="section-tag">About Me</span>
+      <h2 class="section-title">Developer with <span>Real-World</span> Results</h2>
+    </div>
+    <div class="about-grid">
+      <div class="about-img-wrap fade-in">
+        <div class="about-img-frame"></div>
+        <img class="about-img" src="Photos/Profile-Picture.jpg" alt="Benjamin van Hemert">
+        <div class="about-chip"><div class="about-chip-n">8+</div><div class="about-chip-l">Projects Built</div></div>
+      </div>
+      <div class="about-text fade-in">
+        <h2>Hi, I'm Benjamin —<br>I build things that work.</h2>
+        <p>I'm a self-driven developer from Rosmalen, Netherlands with hands-on experience building websites for real businesses, creating games, and developing mobile apps.</p>
+        <p>I care about clean code, good design, and products that actually solve problems. Whether it's a business website, a browser game, or a utility app — I deliver end-to-end.</p>
+        <div class="info-row">
+          <div class="info-pill"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>Rosmalen, Netherlands</div>
+          <div class="info-pill"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/></svg>Web &amp; Software Dev</div>
+          <div class="info-pill"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.81a19.79 19.79 0 01-3.07-8.68A2 2 0 012 1h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.09 8.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>+31 6 40 22 52 49</div>
+          <div class="info-pill"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>Benjamin.van.hemert2@gmail.com</div>
+        </div>
+        <div class="tags">
+          <span class="tag">HTML5</span><span class="tag">CSS3</span><span class="tag">JavaScript</span><span class="tag">Node.js</span><span class="tag">Canvas API</span><span class="tag">Game Dev</span><span class="tag">Mobile Apps</span>
+        </div>
+        <br>
+        <a href="https://github.com/Benjamin2eaccount" target="_blank" class="btn btn-outline">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+          GitHub Profile
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FEATURED PROJECTS -->
+<section id="featured">
+  <div class="inner">
+    <div class="section-header fade-in">
+      <span class="section-tag">Featured Work</span>
+      <h2 class="section-title">Selected <span>Projects</span></h2>
+      <p class="section-desc">A few highlights — see all projects for the full picture.</p>
+    </div>
+    <div class="feat-grid fade-in">
+
+      <!-- Pim Toys -->
+      <div class="pcard">
+        <div class="pcard-preview" style="background:linear-gradient(135deg,#0d0520,#1a0a35)">
+          <div class="browser-bar"><div class="bd" style="background:#ff5f56"></div><div class="bd" style="background:#ffbd2e"></div><div class="bd" style="background:#27c93f"></div><div class="burl"></div></div>
+          <div class="preview-body"><div class="p-icon">&#129528;</div><div class="p-name" style="color:#c084fc">PIM TOYS</div><div class="p-sub">ROSMALEN</div><div style="display:flex;gap:8px;margin-top:10px"><div style="width:30px;height:30px;background:rgba(192,132,252,.18);border:1px solid rgba(192,132,252,.3);border-radius:8px"></div><div style="width:30px;height:30px;background:rgba(192,132,252,.12);border:1px solid rgba(192,132,252,.2);border-radius:8px"></div><div style="width:30px;height:30px;background:rgba(192,132,252,.18);border:1px solid rgba(192,132,252,.3);border-radius:8px"></div></div></div>
+        </div>
+        <div class="pcard-body">
+          <div class="ptags"><span class="ptag web">HTML</span><span class="ptag web">CSS</span><span class="ptag web">JavaScript</span><span class="ptag web">Shop</span></div>
+          <h3 class="ptitle">Pim Toys Rosmalen</h3>
+          <p class="pdesc">Toy shop website with product catalog, about page, and contact. Clean, structured design for a local retail store in Rosmalen.</p>
+        </div>
+        <div class="pcard-footer">
+          <div class="plinks"><a href="https://github.com/Benjamin2eaccount/Pim-Toys-Rosmalen" target="_blank" class="plink">&#128025; Code</a><a href="https://benjamin2eaccount.github.io/Pim-Toys-Rosmalen/" target="_blank" class="plink plink-live">&#8599; Live</a></div>
+          <span class="pplat">Web</span>
+        </div>
+      </div>
+
+      <!-- Cell City -->
+      <div class="pcard">
+        <div class="pcard-preview" style="background:linear-gradient(135deg,#030d1a,#051528)">
+          <div class="browser-bar"><div class="bd" style="background:#ff5f56"></div><div class="bd" style="background:#ffbd2e"></div><div class="bd" style="background:#27c93f"></div><div class="burl"></div></div>
+          <div class="preview-body"><div class="p-icon">&#128241;</div><div class="p-name" style="color:#38bdf8">CELL CITY</div><div style="display:flex;gap:10px;margin-top:6px;font-size:.6rem;color:rgba(56,189,248,.45);letter-spacing:1px"><span>Products</span><span>Services</span><span>Pricing</span></div><div style="display:flex;gap:5px;margin-top:9px"><div style="width:18px;height:18px;background:rgba(56,189,248,.18);border-radius:4px"></div><div style="width:18px;height:18px;background:rgba(56,189,248,.12);border-radius:4px"></div><div style="width:18px;height:18px;background:rgba(56,189,248,.18);border-radius:4px"></div></div></div>
+        </div>
+        <div class="pcard-body">
+          <div class="ptags"><span class="ptag web">HTML</span><span class="ptag web">CSS</span><span class="ptag web">JavaScript</span><span class="ptag web">Dark Mode</span></div>
+          <h3 class="ptitle">Cell City</h3>
+          <p class="pdesc">Multi-page business website with light/dark theme toggle, dynamic product catalog, pricing tables, and services overview.</p>
+        </div>
+        <div class="pcard-footer">
+          <div class="plinks"><a href="https://github.com/Benjamin2eaccount/Cellcitytest" target="_blank" class="plink">&#128025; Code</a><a href="https://benjamin2eaccount.github.io/Cellcitytest/" target="_blank" class="plink plink-live">&#8599; Live</a></div>
+          <span class="pplat">Web</span>
+        </div>
+      </div>
+
+      <!-- Burnout Prefire -->
+      <div class="pcard">
+        <div class="pcard-preview">
+          <div class="burnout-wrap">
+            <div class="bu-title">Prefire Trainer</div>
+            <div class="phone-shell"><div class="ph-notch"></div><div class="ph-screen"><div class="ph-label">BURNOUT</div><div class="ph-row"></div><div class="ph-row"></div><div class="ph-row"></div><div class="ph-row"></div><div class="ph-row"></div><div class="ph-btn">START</div></div></div>
+          </div>
+        </div>
+        <div class="pcard-body">
+          <div class="ptags"><span class="ptag app">Mobile</span><span class="ptag app">Gaming</span><span class="ptag app">Utility</span></div>
+          <h3 class="ptitle">Burnout Prefire App</h3>
+          <p class="pdesc">Mobile training app for memorizing prefire angles on Burnout (CS-style maps). Gives competitive players an edge by drilling common spots.</p>
+        </div>
+        <div class="pcard-footer"><div class="plinks"><span class="plink dim">Android / iOS</span></div><span class="pplat">Mobile</span></div>
+      </div>
+
+    </div>
+    <div class="view-all-wrap fade-in"><a href="projects.html" class="btn btn-outline">View All 8 Projects &rarr;</a></div>
+  </div>
+</section>
+
+<!-- SKILLS -->
+<section id="skills-home">
+  <div class="inner">
+    <div class="section-header fade-in">
+      <span class="section-tag">Skills</span>
+      <h2 class="section-title">What I <span>Work With</span></h2>
+    </div>
+    <div class="skills-grid fade-in">
+      <div class="skill-card">
+        <div class="skill-head"><div class="skill-ic"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#6c63ff" stroke-width="2"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/></svg></div><div class="skill-nm">Frontend</div></div>
+        <div class="skill-items"><span class="skill-it">HTML5</span><span class="skill-it">CSS3</span><span class="skill-it">JavaScript</span><span class="skill-it">Responsive Design</span><span class="skill-it">Animations</span></div>
+      </div>
+      <div class="skill-card">
+        <div class="skill-head"><div class="skill-ic"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#6c63ff" stroke-width="2"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg></div><div class="skill-nm">Backend &amp; Tools</div></div>
+        <div class="skill-items"><span class="skill-it">Node.js</span><span class="skill-it">Git</span><span class="skill-it">GitHub</span><span class="skill-it">npm</span><span class="skill-it">WebStorm</span></div>
+      </div>
+      <div class="skill-card">
+        <div class="skill-head"><div class="skill-ic" style="background:rgba(255,107,107,.12)"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#ff6b6b" stroke-width="2"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/></svg></div><div class="skill-nm">Game Dev</div></div>
+        <div class="skill-items"><span class="skill-it">Canvas API</span><span class="skill-it">Game Physics</span><span class="skill-it">Collision Detection</span><span class="skill-it">2D Games</span></div>
+      </div>
+      <div class="skill-card">
+        <div class="skill-head"><div class="skill-ic" style="background:rgba(0,212,255,.12)"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#00d4ff" stroke-width="2"><rect x="5" y="2" width="14" height="20" rx="2"/><path d="M12 18h.01"/></svg></div><div class="skill-nm">Mobile Dev</div></div>
+        <div class="skill-items"><span class="skill-it">Mobile UI/UX</span><span class="skill-it">App Design</span><span class="skill-it">Touch Interfaces</span><span class="skill-it">Cross-Platform</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <p>Benjamin van Hemert &nbsp;&middot;&nbsp; <span>Web &amp; Software Developer</span> &nbsp;&middot;&nbsp; Rosmalen, NL</p>
+  <p class="footer-sub"><a href="mailto:Benjamin.van.hemert2@gmail.com">Benjamin.van.hemert2@gmail.com</a> &nbsp;&middot;&nbsp; <a href="https://github.com/Benjamin2eaccount" target="_blank">GitHub</a></p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

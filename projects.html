@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>Projects | Benjamin van Hemert</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav id="navbar">
+  <div class="nav-logo">BvH.</div>
+  <ul class="nav-links" id="navLinks">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="projects.html" class="active">Projects</a></li>
+    <li><a href="contact.html" class="nav-cta">Contact</a></li>
+  </ul>
+  <div class="hamburger" id="hamburger" onclick="toggleMenu()"><span></span><span></span><span></span></div>
+</nav>
+
+<div class="page-hero">
+  <div class="page-hero-tag">Portfolio</div>
+  <h1 class="page-hero-title">All <span>Projects</span></h1>
+  <p class="page-hero-desc">Websites, desktop games, and mobile apps — everything I've built.</p>
+</div>
+
+<section style="background:var(--bg)">
+  <div class="inner">
+
+    <!-- WEBSITES -->
+    <div style="margin-bottom:3.5rem" class="fade-in">
+      <div style="display:flex;align-items:center;gap:1rem;margin-bottom:1.6rem">
+        <h3 style="font-size:.78rem;font-weight:700;color:var(--txt2);letter-spacing:1.5px;text-transform:uppercase;white-space:nowrap">Websites</h3>
+        <div style="flex:1;height:1px;background:var(--border)"></div>
+        <span style="background:rgba(108,99,255,.1);border:1px solid rgba(108,99,255,.2);color:#a89fff;padding:.15rem .55rem;border-radius:6px;font-size:.7rem;font-weight:700">4 projects</span>
+      </div>
+      <div class="feat-grid">
+
+        <div class="pcard">
+          <div class="pcard-preview" style="background:linear-gradient(135deg,#1a0f05,#2d1a08)">
+            <div class="browser-bar"><div class="bd" style="background:#ff5f56"></div><div class="bd" style="background:#ffbd2e"></div><div class="bd" style="background:#27c93f"></div><div class="burl"></div></div>
+            <div class="preview-body"><div class="p-icon">&#128679;</div><div class="p-name" style="color:#d4834a">TIMMERMANS</div><div class="p-sub">ROSMALEN B.V.</div><div class="p-nav"><div class="p-nav-i" style="background:#d4834a"></div><div class="p-nav-i" style="background:#d4834a"></div><div class="p-nav-i" style="background:#d4834a"></div><div class="p-nav-i" style="background:#d4834a"></div></div></div>
+          </div>
+          <div class="pcard-body">
+            <div class="ptags"><span class="ptag web">HTML</span><span class="ptag web">CSS</span><span class="ptag web">JavaScript</span><span class="ptag web">Business</span></div>
+            <h3 class="ptitle">Timmermans Rosmalen B.V.</h3>
+            <p class="pdesc">Professional multi-page website for a Dutch carpentry &amp; construction company. Includes pages for services, machines, references, work area, and contact.</p>
+          </div>
+          <div class="pcard-footer"><div class="plinks"><a href="https://github.com/Benjamin2eaccount/Timmermans-Rosmalen-BV" target="_blank" class="plink">&#128025; Code</a><a href="https://benjamin2eaccount.github.io/Timmermans-Rosmalen-BV/" target="_blank" class="plink plink-live">&#8599; Live</a></div><span class="pplat">Web</span></div>
+        </div>
+
+        <div class="pcard">
+          <div class="pcard-preview" style="background:linear-gradient(135deg,#0d0520,#1a0a35)">
+            <div class="browser-bar"><div class="bd" style="background:#ff5f56"></div><div class="bd" style="background:#ffbd2e"></div><div class="bd" style="background:#27c93f"></div><div class="burl"></div></div>
+            <div class="preview-body"><div class="p-icon">&#129528;</div><div class="p-name" style="color:#c084fc">PIM TOYS</div><div class="p-sub">ROSMALEN</div><div style="display:flex;gap:8px;margin-top:10px"><div style="width:30px;height:30px;background:rgba(192,132,252,.18);border:1px solid rgba(192,132,252,.3);border-radius:8px"></div><div style="width:30px;height:30px;background:rgba(192,132,252,.12);border:1px solid rgba(192,132,252,.2);border-radius:8px"></div><div style="width:30px;height:30px;background:rgba(192,132,252,.18);border:1px solid rgba(192,132,252,.3);border-radius:8px"></div></div></div>
+          </div>
+          <div class="pcard-body">
+            <div class="ptags"><span class="ptag web">HTML</span><span class="ptag web">CSS</span><span class="ptag web">JavaScript</span><span class="ptag web">Shop</span></div>
+            <h3 class="ptitle">Pim Toys Rosmalen</h3>
+            <p class="pdesc">Toy shop website with product catalog, about page, and contact. Clean, structured design for a local retail store in Rosmalen.</p>
+          </div>
+          <div class="pcard-footer"><div class="plinks"><a href="https://github.com/Benjamin2eaccount/Pim-Toys-Rosmalen" target="_blank" class="plink">&#128025; Code</a><a href="https://benjamin2eaccount.github.io/Pim-Toys-Rosmalen/" target="_blank" class="plink plink-live">&#8599; Live</a></div><span class="pplat">Web</span></div>
+        </div>
+
+        <div class="pcard">
+          <div class="pcard-preview" style="background:linear-gradient(135deg,#030d1a,#051528)">
+            <div class="browser-bar"><div class="bd" style="background:#ff5f56"></div><div class="bd" style="background:#ffbd2e"></div><div class="bd" style="background:#27c93f"></div><div class="burl"></div></div>
+            <div class="preview-body"><div class="p-icon">&#128241;</div><div class="p-name" style="color:#38bdf8">CELL CITY</div><div style="display:flex;gap:10px;margin-top:6px;font-size:.6rem;color:rgba(56,189,248,.45);letter-spacing:1px"><span>Products</span><span>Services</span><span>Pricing</span></div><div style="display:flex;gap:5px;margin-top:9px"><div style="width:18px;height:18px;background:rgba(56,189,248,.18);border-radius:4px"></div><div style="width:18px;height:18px;background:rgba(56,189,248,.12);border-radius:4px"></div><div style="width:18px;height:18px;background:rgba(56,189,248,.18);border-radius:4px"></div></div></div>
+          </div>
+          <div class="pcard-body">
+            <div class="ptags"><span class="ptag web">HTML</span><span class="ptag web">CSS</span><span class="ptag web">JavaScript</span><span class="ptag web">Dark Mode</span></div>
+            <h3 class="ptitle">Cell City</h3>
+            <p class="pdesc">Multi-page business website with light/dark theme toggle, dynamic product catalog, pricing tables, and services overview.</p>
+          </div>
+          <div class="pcard-footer"><div class="plinks"><a href="https://github.com/Benjamin2eaccount/Cellcitytest" target="_blank" class="plink">&#128025; Code</a><a href="https://benjamin2eaccount.github.io/Cellcitytest/" target="_blank" class="plink plink-live">&#8599; Live</a></div><span class="pplat">Web</span></div>
+        </div>
+
+        <div class="pcard">
+          <div class="pcard-preview" style="background:linear-gradient(135deg,#1a0520,#2d0a38)">
+            <div class="browser-bar"><div class="bd" style="background:#ff5f56"></div><div class="bd" style="background:#ffbd2e"></div><div class="bd" style="background:#27c93f"></div><div class="burl"></div></div>
+            <div class="preview-body" style="position:relative;overflow:hidden"><div style="position:absolute;inset:0;background:radial-gradient(circle at 30% 40%,rgba(168,85,247,.3) 0%,transparent 50%),radial-gradient(circle at 70% 60%,rgba(236,72,153,.2) 0%,transparent 50%)"></div><div class="p-icon" style="position:relative">&#127912;</div><div class="p-name" style="color:#d08efc;position:relative">PAINTING WEB</div><div style="display:flex;gap:5px;margin-top:10px;position:relative"><div style="width:13px;height:13px;border-radius:50%;background:#ef4444"></div><div style="width:13px;height:13px;border-radius:50%;background:#f97316"></div><div style="width:13px;height:13px;border-radius:50%;background:#eab308"></div><div style="width:13px;height:13px;border-radius:50%;background:#22c55e"></div><div style="width:13px;height:13px;border-radius:50%;background:#3b82f6"></div><div style="width:13px;height:13px;border-radius:50%;background:#a855f7"></div></div></div>
+          </div>
+          <div class="pcard-body">
+            <div class="ptags"><span class="ptag web">JavaScript</span><span class="ptag web">Canvas</span><span class="ptag web">Node.js</span></div>
+            <h3 class="ptitle">Painting Web</h3>
+            <p class="pdesc">Interactive painting app in the browser. Canvas-based drawing tools with color picker, brush sizes, and a creative digital art interface.</p>
+          </div>
+          <div class="pcard-footer"><div class="plinks"><a href="https://github.com/Benjamin2eaccount/Paintingweb" target="_blank" class="plink">&#128025; Code</a><a href="https://benjamin2eaccount.github.io/Paintingweb/" target="_blank" class="plink plink-live">&#8599; Live</a></div><span class="pplat">Web</span></div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- GAMES -->
+    <div style="margin-bottom:3.5rem" class="fade-in">
+      <div style="display:flex;align-items:center;gap:1rem;margin-bottom:1.6rem">
+        <h3 style="font-size:.78rem;font-weight:700;color:var(--txt2);letter-spacing:1.5px;text-transform:uppercase;white-space:nowrap">Games</h3>
+        <div style="flex:1;height:1px;background:var(--border)"></div>
+        <span style="background:rgba(255,107,107,.1);border:1px solid rgba(255,107,107,.2);color:#ff9f9f;padding:.15rem .55rem;border-radius:6px;font-size:.7rem;font-weight:700">2 projects</span>
+      </div>
+      <div class="feat-grid">
+
+        <div class="pcard">
+          <div class="pcard-preview">
+            <div class="pong-wrap">
+              <div class="pong-score-row"><span>3</span><span class="pong-vs">VS</span><span>2</span></div>
+              <div class="pong-court"><div class="pong-mid"></div><div class="p-paddle-l"></div><div class="p-paddle-r"></div><div class="p-ball" id="pongBall"></div></div>
+            </div>
+          </div>
+          <div class="pcard-body">
+            <div class="ptags"><span class="ptag game">Game</span><span class="ptag game">JavaScript</span><span class="ptag game">Canvas</span><span class="ptag game">2-Player</span></div>
+            <h3 class="ptitle">Pong Game</h3>
+            <p class="pdesc">Classic two-player Pong built for laptop and desktop. Smooth ball physics, scoreboard, and responsive keyboard controls — W/S and arrow keys.</p>
+          </div>
+          <div class="pcard-footer"><div class="plinks"><span class="plink dim">Desktop App</span></div><span class="pplat">Desktop</span></div>
+        </div>
+
+        <div class="pcard">
+          <div class="pcard-preview">
+            <div class="shooter-wrap">
+              <div class="ch"><div class="ch-ring"></div></div>
+              <div class="sh-hud"><span>HP &#9608;&#9608;&#9608;&#9608;&#9608;</span><span>SCORE: 2450</span><span>30 / 90</span></div>
+              <div class="sh-wave">WAVE 3</div>
+            </div>
+          </div>
+          <div class="pcard-body">
+            <div class="ptags"><span class="ptag game">Game</span><span class="ptag game">JavaScript</span><span class="ptag game">Canvas</span><span class="ptag game">Action</span></div>
+            <h3 class="ptitle">Shooter Game</h3>
+            <p class="pdesc">Fast-paced shooter for laptop and desktop. Wave-based enemies, health system, score tracking, and action-packed gameplay built with Canvas API.</p>
+          </div>
+          <div class="pcard-footer"><div class="plinks"><span class="plink dim">Desktop App</span></div><span class="pplat">Desktop</span></div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- MOBILE APPS -->
+    <div class="fade-in">
+      <div style="display:flex;align-items:center;gap:1rem;margin-bottom:1.6rem">
+        <h3 style="font-size:.78rem;font-weight:700;color:var(--txt2);letter-spacing:1.5px;text-transform:uppercase;white-space:nowrap">Mobile Apps</h3>
+        <div style="flex:1;height:1px;background:var(--border)"></div>
+        <span style="background:rgba(0,212,255,.1);border:1px solid rgba(0,212,255,.2);color:#6ee8ff;padding:.15rem .55rem;border-radius:6px;font-size:.7rem;font-weight:700">2 projects</span>
+      </div>
+      <div class="feat-grid">
+
+        <div class="pcard">
+          <div class="pcard-preview">
+            <div class="burnout-wrap">
+              <div class="bu-title">Prefire Trainer</div>
+              <div class="phone-shell"><div class="ph-notch"></div><div class="ph-screen"><div class="ph-label">BURNOUT</div><div class="ph-row"></div><div class="ph-row"></div><div class="ph-row"></div><div class="ph-row"></div><div class="ph-row"></div><div class="ph-btn">START</div></div></div>
+            </div>
+          </div>
+          <div class="pcard-body">
+            <div class="ptags"><span class="ptag app">Mobile</span><span class="ptag app">Gaming</span><span class="ptag app">Utility</span></div>
+            <h3 class="ptitle">Burnout Prefire App</h3>
+            <p class="pdesc">Mobile training app for memorizing prefire angles on Burnout (CS-style maps). Gives competitive players an edge by drilling common spots.</p>
+          </div>
+          <div class="pcard-footer"><div class="plinks"><span class="plink dim">Android / iOS</span></div><span class="pplat">Mobile</span></div>
+        </div>
+
+        <div class="pcard">
+          <div class="pcard-preview">
+            <div class="psl-wrap">
+              <div class="psl-shell"><div class="ph-notch"></div><div class="psl-screen"><div class="psl-top">LOOKXSMAX</div><div class="psl-num">8.5</div><div class="psl-stars">&#9733;&#9733;&#9733;&#9733;&#9734;</div><div class="psl-bw"><div class="psl-bl">PSL Score</div><div class="psl-b"><div class="psl-bf" style="width:85%"></div></div></div><div class="psl-bw"><div class="psl-bl">Looks</div><div class="psl-b"><div class="psl-bf" style="width:78%"></div></div></div><div class="psl-bw"><div class="psl-bl">Style</div><div class="psl-b"><div class="psl-bf" style="width:91%"></div></div></div></div></div>
+            </div>
+          </div>
+          <div class="pcard-body">
+            <div class="ptags"><span class="ptag app">Mobile</span><span class="ptag app">Lifestyle</span><span class="ptag app">Rating</span></div>
+            <h3 class="ptitle">PSL Scale / Lookxsmax</h3>
+            <p class="pdesc">Rate and track PSL (Physical-Social-Lifestyle) and Lookxsmax scores on your phone. Visualised metrics with progress tracking per category.</p>
+          </div>
+          <div class="pcard-footer"><div class="plinks"><span class="plink dim">Android / iOS</span></div><span class="pplat">Mobile</span></div>
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<footer>
+  <p>Benjamin van Hemert &nbsp;&middot;&nbsp; <span>Web &amp; Software Developer</span> &nbsp;&middot;&nbsp; Rosmalen, NL</p>
+  <p class="footer-sub"><a href="mailto:Benjamin.van.hemert2@gmail.com">Benjamin.van.hemert2@gmail.com</a> &nbsp;&middot;&nbsp; <a href="https://github.com/Benjamin2eaccount" target="_blank">GitHub</a></p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
