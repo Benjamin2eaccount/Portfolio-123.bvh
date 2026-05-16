@@ -1,15 +1,5 @@
 /* Benjamin van Hemert — Portfolio JS */
 
-/* STARFIELD */
-(function(){
-  const c=document.getElementById('stars');if(!c)return;
-  const ctx=c.getContext('2d');let stars=[];
-  function resize(){c.width=innerWidth;c.height=innerHeight;init()}
-  function init(){stars=[];const n=Math.min(Math.floor(c.width*c.height/7500),180);for(let i=0;i<n;i++)stars.push({x:Math.random()*c.width,y:Math.random()*c.height,r:Math.random()*1.3+.2,a:Math.random()*.6+.1,sp:Math.random()*.35+.06,ph:Math.random()*Math.PI*2})}
-  function draw(t){ctx.clearRect(0,0,c.width,c.height);for(const s of stars){const tw=Math.sin(t*.001*s.sp*5+s.ph)*.3+.7;ctx.beginPath();ctx.arc(s.x,s.y,s.r,0,Math.PI*2);ctx.fillStyle=`rgba(255,255,255,${s.a*tw})`;ctx.fill()}requestAnimationFrame(draw)}
-  resize();addEventListener('resize',resize);requestAnimationFrame(draw);
-})();
-
 /* SCROLL REVEAL */
 (function(){
   const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting)e.target.classList.add('visible')}),{threshold:.1,rootMargin:'0px 0px -40px 0px'});
@@ -19,7 +9,7 @@
 /* NAVBAR */
 (function(){
   const nav=document.getElementById('navbar');
-  addEventListener('scroll',()=>{if(nav)nav.style.background=scrollY>50?'rgba(13,17,23,.97)':'rgba(13,17,23,.88)'});
+  addEventListener('scroll',()=>{if(nav)nav.classList.toggle('scrolled',scrollY>50)});
 })();
 function toggleMenu(){document.getElementById('navLinks').classList.toggle('open')}
 document.querySelectorAll('.nav-links a').forEach(a=>a.addEventListener('click',()=>document.getElementById('navLinks').classList.remove('open')));
