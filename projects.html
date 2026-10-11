@@ -1,322 +1,196 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="nl">
 <head>
-<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0">
-<title>Projects | Benjamin van Hemert</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Projecten | Benjamin van Hemert</title>
+<link rel="icon" href="data:,">
+<meta name="description" content="Projecten van Benjamin van Hemert uit Rosmalen: een klantwebsite voor CellCity Rosmalen, conceptwebsites, schoolprojecten en een samenwerking. Bij elk project staat wat het is.">
+<link rel="alternate" hreflang="nl" href="https://benjamin2eaccount.github.io/Portfolio-123.bvh/projects.html">
+<link rel="alternate" hreflang="en" href="https://benjamin2eaccount.github.io/Portfolio-123.bvh/en/projects.html">
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<nav id="navbar">
-  <div class="nav-logo">BvH.</div>
-  <ul class="nav-links" id="navLinks">
-    <li><a href="index.html">Home</a></li>
-    <li><a href="projects.html" class="active">Projects</a></li>
-    <li><a href="contact.html" class="nav-cta">Contact</a></li>
-  </ul>
-  <div class="hamburger" id="hamburger" onclick="toggleMenu()"><span></span><span></span><span></span></div>
-</nav>
+<header class="site-header">
+  <nav class="container nav" aria-label="Hoofdmenu">
+    <a href="index.html" class="brand">Benjamin van Hemert</a>
+    <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="navMenu">Menu</button>
+    <ul class="nav-menu" id="navMenu">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="projects.html" aria-current="page">Projecten</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li class="lang" aria-label="Taal"><span>NL</span><a href="en/projects.html" hreflang="en" lang="en">EN</a></li>
+    </ul>
+  </nav>
+</header>
 
-<div class="page-hero">
-  <div class="page-hero-tag">Portfolio</div>
-  <h1 class="page-hero-title">All <span>Projects</span></h1>
-  <p class="page-hero-desc">Websites, AI tools, school projects, desktop games, and mobile apps — everything I've built.</p>
+<main>
+
+<div class="container page-head">
+  <h1>Projecten</h1>
+  <p>Alles wat ik heb gemaakt. Bij elk project staat wat het is: een klantproject, een concept dat ik zelf heb gemaakt, een schoolproject of een samenwerking.</p>
 </div>
 
-<section style="background:var(--bg)">
-  <div class="inner">
+<section class="section">
+  <div class="container">
 
-    <!-- AI & FULL-STACK -->
-    <div style="margin-bottom:3.5rem" class="fade-in">
-      <div style="display:flex;align-items:center;gap:1rem;margin-bottom:1.6rem">
-        <h3 style="font-size:.78rem;font-weight:700;color:var(--txt2);letter-spacing:1.5px;text-transform:uppercase;white-space:nowrap">AI &amp; Full-Stack</h3>
-        <div style="flex:1;height:1px;background:var(--border)"></div>
-        <span style="background:rgba(99,102,241,.07);border:1px solid rgba(99,102,241,.18);color:var(--a1);padding:.15rem .55rem;border-radius:6px;font-size:.7rem;font-weight:700">1 project</span>
-      </div>
-      <div class="feat-grid">
-
-        <div class="pcard">
-          <div class="pcard-preview">
-            <div class="agencyai-wrap">
-              <div class="agencyai-icon">🤖</div>
-              <div class="agencyai-name">Agency AI</div>
-              <div class="agencyai-sub">Autonomous Outreach</div>
-              <div class="agencyai-bars">
-                <div class="agencyai-bar"><div class="agencyai-fill" style="--w:82%"></div></div>
-                <div class="agencyai-bar"><div class="agencyai-fill" style="--w:67%"></div></div>
-                <div class="agencyai-bar"><div class="agencyai-fill" style="--w:94%"></div></div>
-              </div>
-              <div class="agencyai-pills">
-                <span class="agencyai-p">Claude AI</span>
-                <span class="agencyai-p">Railway</span>
-                <span class="agencyai-p">Live</span>
-              </div>
-            </div>
-          </div>
-          <div class="pcard-body">
-            <div class="ptags"><span class="ptag ai">Node.js</span><span class="ptag ai">Express</span><span class="ptag ai">Claude AI</span><span class="ptag ai">Stripe</span><span class="ptag app">Live</span></div>
-            <h3 class="ptitle">Agency AI</h3>
-            <p class="pdesc">Autonomous AI outreach system for digital marketing agencies. Automatically finds leads, writes personalized cold emails, sends follow-ups, manages a client portal, and handles payments via Stripe. Powered by Claude AI and deployed live on Railway.</p>
-          </div>
-          <div class="pcard-footer">
-            <div class="plinks"><span class="plink dim">Private Repo</span><span class="plink plink-live">&#8599; Railway</span></div>
-            <span class="pplat">Web App</span>
+    <div class="group">
+      <h2>Klantproject</h2>
+      <div class="featured">
+        <img src="Photos/cellcity.jpg" alt="Screenshot van de homepage van CellCity Rosmalen" width="1280" height="640" loading="lazy">
+        <div>
+          <span class="label label-client">Klantproject</span>
+          <h3>CellCity Rosmalen</h3>
+          <p>Website voor een telefoonreparatiewinkel aan Het Frontier 163 in Rosmalen. Met pagina's voor reparatieprijzen, producten, pakketdiensten en contact.</p>
+          <p class="tech">HTML, CSS, JavaScript</p>
+          <div class="btn-row">
+            <a href="https://benjamin2eaccount.github.io/CellcityRosmalen/" class="btn btn-primary" target="_blank" rel="noopener">Bekijk de site</a>
+            <a href="https://github.com/Benjamin2eaccount/CellcityRosmalen" class="btn btn-secondary" target="_blank" rel="noopener">Bekijk de code</a>
           </div>
         </div>
+      </div>
+    </div>
+
+    <div class="group">
+      <h2>Concepten en oefenprojecten</h2>
+      <div class="cards">
+
+        <article class="card">
+          <img src="Photos/timmermans.jpg" alt="Screenshot van de conceptwebsite voor Timmermans Rosmalen B.V." width="1280" height="640" loading="lazy">
+          <div class="card-body">
+            <span class="label">Concept / oefenproject</span>
+            <h3>Timmermans Rosmalen B.V.</h3>
+            <p>Website voor een loonwerkbedrijf in Rosmalen, met pagina's voor diensten, machines, referenties, werkgebied en contact.</p>
+            <p class="note-line">Concept, niet in opdracht van het bedrijf gemaakt.</p>
+            <p class="tech">HTML, CSS, JavaScript</p>
+            <div class="links"><span class="off">Code niet openbaar</span></div>
+          </div>
+        </article>
+
+        <article class="card">
+          <img src="Photos/pimtoys.jpg" alt="Screenshot van de conceptwebsite voor Pim Toys Rosmalen" width="1280" height="640" loading="lazy">
+          <div class="card-body">
+            <span class="label">Concept / oefenproject</span>
+            <h3>Pim Toys Rosmalen</h3>
+            <p>Website voor een speelgoedwinkel in Rosmalen, met een productpagina, een over-ons-pagina en contact.</p>
+            <p class="note-line">Concept, niet in opdracht van het bedrijf gemaakt.</p>
+            <p class="tech">HTML, CSS, JavaScript</p>
+            <div class="links"><span class="off">Code niet openbaar</span></div>
+          </div>
+        </article>
+
+        <article class="card">
+          <img src="Photos/paintingweb.jpg" alt="Screenshot van Paintingweb met de detailweergave van een schilderij" width="1280" height="640" loading="lazy">
+          <div class="card-body">
+            <span class="label">Concept / oefenproject</span>
+            <h3>Paintingweb</h3>
+            <p>Webgalerij met bekende schilderijen. Je kunt zoeken, sorteren, favorieten bewaren en per schilderij een detailweergave openen.</p>
+            <p class="tech">HTML, CSS, JavaScript</p>
+            <div class="links"><span class="off">Code niet openbaar</span></div>
+          </div>
+        </article>
 
       </div>
     </div>
 
-    <!-- WEBSITES -->
-    <div style="margin-bottom:3.5rem" class="fade-in">
-      <div style="display:flex;align-items:center;gap:1rem;margin-bottom:1.6rem">
-        <h3 style="font-size:.78rem;font-weight:700;color:var(--txt2);letter-spacing:1.5px;text-transform:uppercase;white-space:nowrap">Websites</h3>
-        <div style="flex:1;height:1px;background:var(--border)"></div>
-        <span style="background:rgba(99,102,241,.07);border:1px solid rgba(99,102,241,.18);color:var(--a1);padding:.15rem .55rem;border-radius:6px;font-size:.7rem;font-weight:700">6 projects</span>
-      </div>
-      <div class="feat-grid">
+    <div class="group">
+      <h2>Samenwerking</h2>
+      <div class="cards">
 
-        <div class="pcard">
-          <div class="pcard-preview" style="background:linear-gradient(135deg,#1a0f05,#2d1a08)">
-            <div class="browser-bar"><div class="bd" style="background:#ff5f56"></div><div class="bd" style="background:#ffbd2e"></div><div class="bd" style="background:#27c93f"></div><div class="burl"></div></div>
-            <div class="preview-body"><div class="p-icon">&#128679;</div><div class="p-name" style="color:#d4834a">TIMMERMANS</div><div class="p-sub">ROSMALEN B.V.</div><div class="p-nav"><div class="p-nav-i" style="background:#d4834a"></div><div class="p-nav-i" style="background:#d4834a"></div><div class="p-nav-i" style="background:#d4834a"></div><div class="p-nav-i" style="background:#d4834a"></div></div></div>
+        <article class="card">
+          <div class="shot-placeholder">GymApp</div>
+          <div class="card-body">
+            <span class="label">Samenwerking</span>
+            <h3>GymApp</h3>
+            <p>App voor krachttraining en voeding, voor iOS en web. Met trainingen, voeding bijhouden met een barcode-scan en statistieken.</p>
+            <p class="note-line">Samen gebouwd met [naam].</p>
+            <p class="tech">TypeScript, Expo, Supabase</p>
+            <div class="links"><a href="https://github.com/altijdbezig/gymapp" target="_blank" rel="noopener">Bekijk de code</a></div>
           </div>
-          <div class="pcard-body">
-            <div class="ptags"><span class="ptag web">HTML</span><span class="ptag web">CSS</span><span class="ptag web">JavaScript</span><span class="ptag web">Business</span></div>
-            <h3 class="ptitle">Timmermans Rosmalen B.V.</h3>
-            <p class="pdesc">Professional multi-page website for a Dutch carpentry &amp; construction company. Includes pages for services, machines, references, work area, and contact.</p>
-          </div>
-          <div class="pcard-footer"><div class="plinks"><a href="https://github.com/Benjamin2eaccount/Timmermans-Rosmalen-BV" target="_blank" class="plink">&#128025; Code</a><a href="https://benjamin2eaccount.github.io/Timmermans-Rosmalen-BV/" target="_blank" class="plink plink-live">&#8599; Live</a></div><span class="pplat">Web</span></div>
-        </div>
-
-        <div class="pcard">
-          <div class="pcard-preview" style="background:linear-gradient(135deg,#0d0520,#1a0a35)">
-            <div class="browser-bar"><div class="bd" style="background:#ff5f56"></div><div class="bd" style="background:#ffbd2e"></div><div class="bd" style="background:#27c93f"></div><div class="burl"></div></div>
-            <div class="preview-body"><div class="p-icon">&#129528;</div><div class="p-name" style="color:#c084fc">PIM TOYS</div><div class="p-sub">ROSMALEN</div><div style="display:flex;gap:8px;margin-top:10px"><div style="width:30px;height:30px;background:rgba(192,132,252,.18);border:1px solid rgba(192,132,252,.3);border-radius:8px"></div><div style="width:30px;height:30px;background:rgba(192,132,252,.12);border:1px solid rgba(192,132,252,.2);border-radius:8px"></div><div style="width:30px;height:30px;background:rgba(192,132,252,.18);border:1px solid rgba(192,132,252,.3);border-radius:8px"></div></div></div>
-          </div>
-          <div class="pcard-body">
-            <div class="ptags"><span class="ptag web">HTML</span><span class="ptag web">CSS</span><span class="ptag web">JavaScript</span><span class="ptag web">Shop</span></div>
-            <h3 class="ptitle">Pim Toys Rosmalen</h3>
-            <p class="pdesc">Toy shop website with product catalog, about page, and contact. Clean, structured design for a local retail store in Rosmalen.</p>
-          </div>
-          <div class="pcard-footer"><div class="plinks"><a href="https://github.com/Benjamin2eaccount/Pim-Toys-Rosmalen" target="_blank" class="plink">&#128025; Code</a><a href="https://benjamin2eaccount.github.io/Pim-Toys-Rosmalen/" target="_blank" class="plink plink-live">&#8599; Live</a></div><span class="pplat">Web</span></div>
-        </div>
-
-        <div class="pcard">
-          <div class="pcard-preview" style="background:linear-gradient(135deg,#030d1a,#051528)">
-            <div class="browser-bar"><div class="bd" style="background:#ff5f56"></div><div class="bd" style="background:#ffbd2e"></div><div class="bd" style="background:#27c93f"></div><div class="burl"></div></div>
-            <div class="preview-body"><div class="p-icon">&#128241;</div><div class="p-name" style="color:#38bdf8">CELL CITY</div><div style="display:flex;gap:10px;margin-top:6px;font-size:.6rem;color:rgba(56,189,248,.45);letter-spacing:1px"><span>Products</span><span>Services</span><span>Pricing</span></div><div style="display:flex;gap:5px;margin-top:9px"><div style="width:18px;height:18px;background:rgba(56,189,248,.18);border-radius:4px"></div><div style="width:18px;height:18px;background:rgba(56,189,248,.12);border-radius:4px"></div><div style="width:18px;height:18px;background:rgba(56,189,248,.18);border-radius:4px"></div></div></div>
-          </div>
-          <div class="pcard-body">
-            <div class="ptags"><span class="ptag web">HTML</span><span class="ptag web">CSS</span><span class="ptag web">JavaScript</span><span class="ptag web">Dark Mode</span></div>
-            <h3 class="ptitle">Cell City</h3>
-            <p class="pdesc">Multi-page business website with light/dark theme toggle, dynamic product catalog, pricing tables, and services overview.</p>
-          </div>
-          <div class="pcard-footer"><div class="plinks"><a href="https://github.com/Benjamin2eaccount/Cellcitytest" target="_blank" class="plink">&#128025; Code</a><a href="https://benjamin2eaccount.github.io/Cellcitytest/" target="_blank" class="plink plink-live">&#8599; Live</a></div><span class="pplat">Web</span></div>
-        </div>
-
-        <div class="pcard">
-          <div class="pcard-preview" style="background:linear-gradient(135deg,#1a0520,#2d0a38)">
-            <div class="browser-bar"><div class="bd" style="background:#ff5f56"></div><div class="bd" style="background:#ffbd2e"></div><div class="bd" style="background:#27c93f"></div><div class="burl"></div></div>
-            <div class="preview-body" style="position:relative;overflow:hidden"><div style="position:absolute;inset:0;background:radial-gradient(circle at 30% 40%,rgba(168,85,247,.3) 0%,transparent 50%),radial-gradient(circle at 70% 60%,rgba(236,72,153,.2) 0%,transparent 50%)"></div><div class="p-icon" style="position:relative">&#127912;</div><div class="p-name" style="color:#d08efc;position:relative">PAINTING WEB</div><div style="display:flex;gap:5px;margin-top:10px;position:relative"><div style="width:13px;height:13px;border-radius:50%;background:#ef4444"></div><div style="width:13px;height:13px;border-radius:50%;background:#f97316"></div><div style="width:13px;height:13px;border-radius:50%;background:#eab308"></div><div style="width:13px;height:13px;border-radius:50%;background:#22c55e"></div><div style="width:13px;height:13px;border-radius:50%;background:#3b82f6"></div><div style="width:13px;height:13px;border-radius:50%;background:#a855f7"></div></div></div>
-          </div>
-          <div class="pcard-body">
-            <div class="ptags"><span class="ptag web">JavaScript</span><span class="ptag web">Canvas</span><span class="ptag web">Node.js</span></div>
-            <h3 class="ptitle">Painting Web</h3>
-            <p class="pdesc">Interactive painting app in the browser. Canvas-based drawing tools with color picker, brush sizes, and a creative digital art interface.</p>
-          </div>
-          <div class="pcard-footer"><div class="plinks"><a href="https://github.com/Benjamin2eaccount/Paintingweb" target="_blank" class="plink">&#128025; Code</a><a href="https://benjamin2eaccount.github.io/Paintingweb/" target="_blank" class="plink plink-live">&#8599; Live</a></div><span class="pplat">Web</span></div>
-        </div>
-
-        <div class="pcard">
-          <div class="pcard-preview" style="background:linear-gradient(135deg,#04101e,#08192f)">
-            <div class="browser-bar"><div class="bd" style="background:#ff5f56"></div><div class="bd" style="background:#ffbd2e"></div><div class="bd" style="background:#27c93f"></div><div class="burl"></div></div>
-            <div class="preview-body"><div class="p-icon">&#9889;</div><div class="p-name" style="color:#60a5fa">RETA EU</div><div class="p-sub">NEXT.JS &middot; TYPESCRIPT</div><div style="display:flex;gap:8px;margin-top:10px"><div style="width:36px;height:5px;background:rgba(96,165,250,.3);border-radius:3px"></div><div style="width:24px;height:5px;background:rgba(96,165,250,.18);border-radius:3px"></div><div style="width:30px;height:5px;background:rgba(96,165,250,.3);border-radius:3px"></div></div></div>
-          </div>
-          <div class="pcard-body">
-            <div class="ptags"><span class="ptag web">Next.js</span><span class="ptag web">TypeScript</span><span class="ptag web">React</span></div>
-            <h3 class="ptitle">RetaEU Website</h3>
-            <p class="pdesc">Modern website built with Next.js and TypeScript. Fast, SEO-friendly and built on the latest React framework stack.</p>
-          </div>
-          <div class="pcard-footer"><div class="plinks"><a href="https://github.com/Benjamin2eaccount/retaeu-website" target="_blank" class="plink">&#128025; Code</a></div><span class="pplat">Web</span></div>
-        </div>
-
-        <div class="pcard">
-          <div class="pcard-preview">
-            <div class="romulus-wrap">
-              <div class="romulus-brand">ROMULUS</div>
-              <div class="romulus-tag">Looksmax Shop</div>
-              <div class="romulus-divider"></div>
-              <div class="romulus-chips">
-                <span class="romulus-chip">Dark</span>
-                <span class="romulus-chip">E-Com</span>
-                <span class="romulus-chip">Cart</span>
-              </div>
-            </div>
-          </div>
-          <div class="pcard-body">
-            <div class="ptags"><span class="ptag web">HTML</span><span class="ptag web">CSS</span><span class="ptag web">JavaScript</span><span class="ptag web">E-Commerce</span></div>
-            <h3 class="ptitle">Romulus Shop</h3>
-            <p class="pdesc">Dark aesthetic e-commerce shop for a TikTok creator. Features a product catalog with filters &amp; sorting, cart drawer, product modals, and a premium black &amp; chrome design.</p>
-          </div>
-          <div class="pcard-footer"><div class="plinks"><span class="plink dim">Private Repo</span></div><span class="pplat">Web</span></div>
-        </div>
+        </article>
 
       </div>
     </div>
 
-    <!-- SCHOOL PROJECTS -->
-    <div style="margin-bottom:3.5rem" class="fade-in">
-      <div style="display:flex;align-items:center;gap:1rem;margin-bottom:1.6rem">
-        <h3 style="font-size:.78rem;font-weight:700;color:var(--txt2);letter-spacing:1.5px;text-transform:uppercase;white-space:nowrap">School Projects</h3>
-        <div style="flex:1;height:1px;background:var(--border)"></div>
-        <span style="background:rgba(234,179,8,.07);border:1px solid rgba(234,179,8,.18);color:#ca8a04;padding:.15rem .55rem;border-radius:6px;font-size:.7rem;font-weight:700">1 project</span>
-      </div>
-      <div class="feat-grid">
+    <div class="group">
+      <h2>Schoolprojecten</h2>
+      <div class="cards">
 
-        <div class="pcard">
-          <div class="pcard-preview">
-            <div class="ws-wrap">
-              <div class="ws-icon">&#127757;</div>
-              <div class="ws-name">WorldSeeker</div>
-              <div class="ws-sub">Phygital Experience</div>
-              <div class="ws-pills">
-                <div class="ws-pill">Explore</div>
-                <div class="ws-pill">Shoot</div>
-                <div class="ws-pill">Level Up</div>
-              </div>
-            </div>
+        <article class="card">
+          <img src="Photos/worldseeker.jpg" alt="Screenshot van het startscherm van WorldSeeker" width="1280" height="640" loading="lazy">
+          <div class="card-body">
+            <span class="label">Schoolproject</span>
+            <h3>WorldSeeker</h3>
+            <p>Speurtocht-webapp: je krijgt een opdracht, fotografeert buiten een voorwerp en uploadt de foto om een level omhoog te gaan. Met een scorebord.</p>
+            <p class="tech">JavaScript, Node.js (Express)</p>
+            <div class="links"><span class="off">Schoolproject, code niet openbaar</span></div>
           </div>
-          <div class="pcard-body">
-            <div class="ptags"><span class="ptag school">School</span><span class="ptag web">JavaScript</span><span class="ptag web">CSS</span><span class="ptag web">Node.js</span></div>
-            <h3 class="ptitle">WorldSeeker</h3>
-            <p class="pdesc">Phygital scavenger hunt app — go outside, photograph real-world objects, upload your photo and level up on the digital leaderboard. Combines physical exploration with an online scoring system.</p>
-          </div>
-          <div class="pcard-footer"><div class="plinks"><a href="https://github.com/Benjamin2eaccount/Phygital-experience-World-seeker" target="_blank" class="plink">&#128025; Code</a><a href="https://benjamin2eaccount.github.io/Phygital-experience-World-seeker/" target="_blank" class="plink plink-live">&#8599; Live</a></div><span class="pplat">Web App</span></div>
-        </div>
+        </article>
 
-      </div>
-    </div>
+        <article class="card">
+          <div class="shot-placeholder">Romulus Shop</div>
+          <div class="card-body">
+            <span class="label">Schoolproject</span>
+            <h3>Romulus Shop</h3>
+            <p>Een webshop, gemaakt als schoolopdracht.</p>
+            <div class="links"><span class="off">Schoolproject, code niet openbaar</span></div>
+          </div>
+        </article>
 
-    <!-- GAMES -->
-    <div style="margin-bottom:3.5rem" class="fade-in">
-      <div style="display:flex;align-items:center;gap:1rem;margin-bottom:1.6rem">
-        <h3 style="font-size:.78rem;font-weight:700;color:var(--txt2);letter-spacing:1.5px;text-transform:uppercase;white-space:nowrap">Games</h3>
-        <div style="flex:1;height:1px;background:var(--border)"></div>
-        <span style="background:rgba(239,68,68,.07);border:1px solid rgba(239,68,68,.18);color:#ef4444;padding:.15rem .55rem;border-radius:6px;font-size:.7rem;font-weight:700">2 projects</span>
-      </div>
-      <div class="feat-grid">
+        <article class="card">
+          <div class="shot-placeholder">Pong</div>
+          <div class="card-body">
+            <span class="label">Schoolproject</span>
+            <h3>Pong</h3>
+            <p>Een eigen versie van het klassieke spel Pong.</p>
+            <div class="links"><span class="off">Schoolproject, code niet openbaar</span></div>
+          </div>
+        </article>
 
-        <div class="pcard">
-          <div class="pcard-preview">
-            <div class="pong-wrap">
-              <div class="pong-score-row"><span>3</span><span class="pong-vs">VS</span><span>2</span></div>
-              <div class="pong-court"><div class="pong-mid"></div><div class="p-paddle-l"></div><div class="p-paddle-r"></div><div class="p-ball" id="pongBall"></div></div>
-            </div>
+        <article class="card">
+          <div class="shot-placeholder">Shooter</div>
+          <div class="card-body">
+            <span class="label">Schoolproject</span>
+            <h3>Shooter</h3>
+            <p>Een shooter-game.</p>
+            <div class="links"><span class="off">Schoolproject, code niet openbaar</span></div>
           </div>
-          <div class="pcard-body">
-            <div class="ptags"><span class="ptag game">Game</span><span class="ptag game">JavaScript</span><span class="ptag game">Canvas</span><span class="ptag game">2-Player</span></div>
-            <h3 class="ptitle">Pong Game</h3>
-            <p class="pdesc">Classic two-player Pong built for laptop and desktop. Smooth ball physics, scoreboard, and responsive keyboard controls — W/S and arrow keys.</p>
-          </div>
-          <div class="pcard-footer"><div class="plinks"><span class="plink dim">Desktop App</span></div><span class="pplat">Desktop</span></div>
-        </div>
+        </article>
 
-        <div class="pcard">
-          <div class="pcard-preview">
-            <div class="shooter-wrap">
-              <div class="ch"><div class="ch-ring"></div></div>
-              <div class="sh-hud"><span>HP &#9608;&#9608;&#9608;&#9608;&#9608;</span><span>SCORE: 2450</span><span>30 / 90</span></div>
-              <div class="sh-wave">WAVE 3</div>
-            </div>
+        <article class="card">
+          <div class="shot-placeholder">Burnout Prefire App</div>
+          <div class="card-body">
+            <span class="label">Schoolproject</span>
+            <h3>Burnout Prefire App</h3>
+            <p>Een app om prefire-hoeken op de map Burnout te oefenen.</p>
+            <div class="links"><span class="off">Schoolproject, code niet openbaar</span></div>
           </div>
-          <div class="pcard-body">
-            <div class="ptags"><span class="ptag game">Game</span><span class="ptag game">JavaScript</span><span class="ptag game">Canvas</span><span class="ptag game">Action</span></div>
-            <h3 class="ptitle">Shooter Game</h3>
-            <p class="pdesc">Fast-paced shooter for laptop and desktop. Wave-based enemies, health system, score tracking, and action-packed gameplay built with Canvas API.</p>
-          </div>
-          <div class="pcard-footer"><div class="plinks"><span class="plink dim">Desktop App</span></div><span class="pplat">Desktop</span></div>
-        </div>
+        </article>
 
-      </div>
-    </div>
+        <article class="card">
+          <div class="shot-placeholder">Sudoku App</div>
+          <div class="card-body">
+            <span class="label">Schoolproject</span>
+            <h3>Sudoku App</h3>
+            <p>Een Sudoku-app voor mobiel.</p>
+            <div class="links"><span class="off">Schoolproject, code niet openbaar</span></div>
+          </div>
+        </article>
 
-    <!-- MOBILE APPS -->
-    <div class="fade-in">
-      <div style="display:flex;align-items:center;gap:1rem;margin-bottom:1.6rem">
-        <h3 style="font-size:.78rem;font-weight:700;color:var(--txt2);letter-spacing:1.5px;text-transform:uppercase;white-space:nowrap">Mobile Apps</h3>
-        <div style="flex:1;height:1px;background:var(--border)"></div>
-        <span style="background:rgba(14,165,233,.07);border:1px solid rgba(14,165,233,.18);color:#0ea5e9;padding:.15rem .55rem;border-radius:6px;font-size:.7rem;font-weight:700">3 projects</span>
-      </div>
-      <div class="feat-grid">
-
-        <div class="pcard">
-          <div class="pcard-preview">
-            <div class="burnout-wrap">
-              <div class="bu-title">Prefire Trainer</div>
-              <div class="phone-shell"><div class="ph-notch"></div><div class="ph-screen"><div class="ph-label">BURNOUT</div><div class="ph-row"></div><div class="ph-row"></div><div class="ph-row"></div><div class="ph-row"></div><div class="ph-row"></div><div class="ph-btn">START</div></div></div>
-            </div>
+        <article class="card">
+          <div class="shot-placeholder">Lookxsmaxen App</div>
+          <div class="card-body">
+            <span class="label">Schoolproject</span>
+            <h3>Lookxsmaxen App</h3>
+            <p>Mobiele app met een onboarding, een dagplan en een voortgangsscherm.</p>
+            <p class="tech">TypeScript, Expo</p>
+            <div class="links"><span class="off">Schoolproject, code niet openbaar</span></div>
           </div>
-          <div class="pcard-body">
-            <div class="ptags"><span class="ptag app">Mobile</span><span class="ptag app">Gaming</span><span class="ptag app">Utility</span></div>
-            <h3 class="ptitle">Burnout Prefire App</h3>
-            <p class="pdesc">Mobile training app for memorizing prefire angles on Burnout (CS-style maps). Gives competitive players an edge by drilling common spots.</p>
-          </div>
-          <div class="pcard-footer"><div class="plinks"><span class="plink dim">Android / iOS</span></div><span class="pplat">Mobile</span></div>
-        </div>
-
-        <div class="pcard">
-          <div class="pcard-preview">
-            <div class="sudoku-wrap">
-              <div class="su-label">Puzzle App</div>
-              <div class="su-phone">
-                <div class="su-notch"></div>
-                <div class="su-screen">
-                  <div class="su-title-sm">SUDOKU</div>
-                  <div class="su-grid">
-                    <div class="su-cell on">5</div><div class="su-cell">3</div><div class="su-cell on">4</div><div class="su-cell">6</div>
-                    <div class="su-cell">6</div><div class="su-cell on">7</div><div class="su-cell">2</div><div class="su-cell on">1</div>
-                    <div class="su-cell on">1</div><div class="su-cell">9</div><div class="su-cell on">8</div><div class="su-cell">3</div>
-                    <div class="su-cell">8</div><div class="su-cell on">5</div><div class="su-cell">9</div><div class="su-cell on">7</div>
-                  </div>
-                  <div class="su-btn">SOLVE</div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="pcard-body">
-            <div class="ptags"><span class="ptag app">Mobile</span><span class="ptag app">Puzzle</span><span class="ptag game">Game</span></div>
-            <h3 class="ptitle">Sudoku App</h3>
-            <p class="pdesc">Mobile Sudoku puzzle app with multiple difficulty levels. Clean UI, smart hint system, and progress tracking to sharpen your logic skills on the go.</p>
-          </div>
-          <div class="pcard-footer"><div class="plinks"><span class="plink dim">Android / iOS</span></div><span class="pplat">Mobile</span></div>
-        </div>
-
-        <div class="pcard">
-          <div class="pcard-preview">
-            <div class="looksmax-wrap">
-              <div class="looksmax-label">Progress Tracker</div>
-              <div class="looksmax-phone">
-                <div class="looksmax-notch"></div>
-                <div class="looksmax-screen">
-                  <div class="looksmax-title">LOOKSMAX</div>
-                  <div class="looksmax-bar-wrap"><div class="looksmax-bar" style="width:72%"></div></div>
-                  <div class="looksmax-bar-wrap"><div class="looksmax-bar" style="width:55%"></div></div>
-                  <div class="looksmax-bar-wrap"><div class="looksmax-bar" style="width:88%"></div></div>
-                  <div class="looksmax-btn">MY PLAN</div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="pcard-body">
-            <div class="ptags"><span class="ptag app">React Native</span><span class="ptag app">Expo</span><span class="ptag app">TypeScript</span></div>
-            <h3 class="ptitle">Lookxsmaxen App</h3>
-            <p class="pdesc">Mobile self-improvement tracker built with Expo. Features a full onboarding flow, personalized daily plan, and progress tracking across multiple looksmaxxing categories.</p>
-          </div>
-          <div class="pcard-footer"><div class="plinks"><span class="plink dim">Private Repo</span></div><span class="pplat">Mobile</span></div>
-        </div>
+        </article>
 
       </div>
     </div>
@@ -324,9 +198,13 @@
   </div>
 </section>
 
-<footer>
-  <p>Benjamin van Hemert &nbsp;&middot;&nbsp; <span>Web &amp; Software Developer</span> &nbsp;&middot;&nbsp; Rosmalen, NL</p>
-  <p class="footer-sub"><a href="mailto:Benjamin.van.hemert2@gmail.com">Benjamin.van.hemert2@gmail.com</a> &nbsp;&middot;&nbsp; <a href="https://github.com/Benjamin2eaccount" target="_blank">GitHub</a></p>
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <span>Benjamin van Hemert · Rosmalen</span>
+    <span><a href="mailto:Benjamin.van.hemert2@gmail.com">E-mail</a> · <a href="https://wa.me/31640225249" target="_blank" rel="noopener">WhatsApp</a> · <a href="https://github.com/Benjamin2eaccount" target="_blank" rel="noopener">GitHub</a></span>
+  </div>
 </footer>
 
 <script src="script.js"></script>
