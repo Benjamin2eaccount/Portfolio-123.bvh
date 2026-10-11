@@ -152,6 +152,16 @@ h1, h2, h3 { line-height: 1.2; font-weight: 700; letter-spacing: -.01em; }
 .group h2 { font-size: 1.25rem; padding-bottom: .6rem; margin-bottom: 1.25rem; border-bottom: 1px solid var(--border); }
 .more { margin-top: 1.75rem; }
 
+/* SCHOOLPROJECTEN: één kaart plus een compacte lijst */
+.school-grid { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 2fr); gap: 1.25rem; align-items: start; }
+@media (max-width: 800px) { .school-grid { grid-template-columns: 1fr; } }
+.other-list { border: 1px solid var(--border); border-radius: var(--radius); background: #fff; padding: 1.1rem 1.2rem .4rem; }
+.other-list h3 { font-size: 1.1rem; }
+.other-note { color: var(--muted); font-size: .9rem; margin: .2rem 0 .6rem; }
+.other-list ul { list-style: none; }
+.other-list li { padding: .75rem 0; border-top: 1px solid var(--border); color: var(--muted); font-size: .95rem; }
+.other-list li strong { display: block; color: var(--text); font-weight: 600; }
+
 /* ABOUT */
 .about { display: grid; grid-template-columns: 1fr; gap: 1rem; max-width: 720px; }
 .about p { color: var(--muted); }
