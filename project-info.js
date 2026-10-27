@@ -125,49 +125,26 @@ window.PROJECT_INFO = {
     }
   },
 
-  burnoutshield: {
-    en: {
-      about: 'A small mobile app that helps you spot burnout early, by checking in with yourself for a minute each day.',
-      points: [
-        'Daily check-in for energy, stress, sleep quality, work hours and mood',
-        'A burnout score from 0 to 100 with a risk level: low, moderate or high',
-        'Tips that match your score, like scheduling breaks or protecting your sleep',
-        'History of the last 14 days',
-        'Optional daily reminder to check in',
-        'Your data stays on your phone and you can clear it at any time'
-      ]
-    },
-    nl: {
-      about: 'Een kleine mobiele app die je helpt een burn-out op tijd te zien aankomen, door elke dag even bij jezelf in te checken.',
-      points: [
-        'Dagelijkse check-in voor energie, stress, slaapkwaliteit, werkuren en stemming',
-        'Een burnoutscore van 0 tot 100 met een risiconiveau: laag, gemiddeld of hoog',
-        'Tips die bij je score passen, zoals pauzes inplannen of je slaap beschermen',
-        'Geschiedenis van de afgelopen 14 dagen',
-        'Een dagelijkse herinnering om in te checken, als je dat wilt',
-        'Je gegevens blijven op je telefoon en je kunt ze altijd wissen'
-      ]
-    }
-  },
-
   hygge: {
     en: {
-      about: 'A team project for school about ordering toasties at the Hygge festival. School provided the backend; our team built the front end, working in sprints with a scrum board.',
+      about: 'A team project for school: the ordering site for Warm Corner, a stand with warm drinks and food at the Hygge festival 2026. School provided the backend; our team built the front end, working in sprints with a scrum board.',
       points: [
-        'Menu with all the toasties',
-        'Shopping cart',
-        'Order details and a confirmation page',
-        'A counter screen that shows incoming orders',
+        'Menu with warm drinks and food, with sold-out items clearly marked',
+        'Ordering in four steps: choose, cart, details, pay',
+        'You get a QR code to show at the counter, then pay by card or phone',
+        'On your phone you see how long your order will take',
+        'A counter screen for incoming orders, protected with an API key',
         'Packaged in a Docker container with nginx'
       ]
     },
     nl: {
-      about: 'Een teamproject voor school over het bestellen van tosti\'s op het Hygge festival. De backend kregen we van school; ons team bouwde de voorkant, in sprints met een scrumboard.',
+      about: 'Een teamproject voor school: de bestelsite van Warm Corner, een kraam met warme dranken en eten op het Hygge-festival 2026. De backend kregen we van school; ons team bouwde de voorkant, in sprints met een scrumboard.',
       points: [
-        'Menu met alle tosti\'s',
-        'Winkelmandje',
-        'Bestelgegevens en een bevestigingspagina',
-        'Een balie-scherm dat binnenkomende bestellingen laat zien',
+        'Menu met warme dranken en eten, met uitverkochte producten duidelijk aangegeven',
+        'Bestellen in vier stappen: kiezen, mandje, gegevens, betalen',
+        'Je krijgt een QR-code voor bij de balie en betaalt met pin of je telefoon',
+        'Op je telefoon zie je hoe lang je bestelling nog duurt',
+        'Een balie-scherm voor binnenkomende bestellingen, beveiligd met een API-sleutel',
         'Verpakt in een Docker-container met nginx'
       ]
     }
