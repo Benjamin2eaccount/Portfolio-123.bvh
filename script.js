@@ -165,6 +165,81 @@ const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').match
   update();
 })();
 
+/* PROJECT-POPUP: klik op een project voor extra info (tekst staat in project-info.js) */
+(function () {
+  const info = window.PROJECT_INFO;
+  const projects = [...document.querySelectorAll('[data-project]')];
+  if (!info || !projects.length) return;
+
+  const nl = document.documentElement.lang === 'nl';
+  const t = nl
+    ? { more: 'Meer info', close: 'Sluiten', about: 'Over het project', points: 'Wat zit erin' }
+    : { more: 'More info', close: 'Close', about: 'About the project', points: "What's inside" };
+
+  const dialog = document.createElement('dialog');
+  dialog.className = 'project-modal';
+  dialog.innerHTML =
+    '<button type="button" class="modal-close" aria-label="' + t.close + '">&times;</button>' +
+    '<div class="modal-media"></div>' +
+    '<div class="modal-body">' +
+      '<div class="label-row"></div>' +
+      '<h2 class="modal-title"></h2>' +
+      '<p class="modal-lead"></p>' +
+      '<h3>' + t.about + '</h3>' +
+      '<p class="modal-about"></p>' +
+      '<h3>' + t.points + '</h3>' +
+      '<ul class="check modal-points"></ul>' +
+      '<p class="tech"></p>' +
+      '<div class="links"></div>' +
+    '</div>';
+  document.body.appendChild(dialog);
+  const $ = sel => dialog.querySelector(sel);
+
+  const open = el => {
+    const data = info[el.dataset.project][nl ? 'nl' : 'en'];
+    const media = el.querySelector('.card-media, .browser-view');
+    $('.modal-media').replaceChildren(...(media ? [...media.cloneNode(true).childNodes] : []));
+    $('.label-row').replaceChildren(...[...el.querySelectorAll('.label')].map(l => l.cloneNode(true)));
+    $('.modal-title').textContent = el.querySelector('h3').textContent;
+    $('.modal-lead').textContent = el.querySelector('h3 ~ p:not(.tech)').textContent;
+    $('.modal-about').textContent = data.about;
+    $('.modal-points').replaceChildren(...data.points.map(p => {
+      const li = document.createElement('li');
+      li.textContent = p;
+      return li;
+    }));
+    $('.tech').textContent = el.querySelector('.tech').textContent;
+    $('.links').replaceChildren(...[...el.querySelectorAll('.links a, .links .off, .btn-row a')].map(a => {
+      const c = a.cloneNode(true);
+      c.className = a.matches('.off') ? 'off' : '';
+      return c;
+    }));
+    dialog.scrollTop = 0;
+    dialog.showModal();
+  };
+
+  projects.forEach(el => {
+    if (!info[el.dataset.project]) return;
+    const btn = document.createElement('button');
+    btn.type = 'button';
+    btn.className = 'more-btn';
+    btn.innerHTML = t.more + ' <span aria-hidden="true">→</span>';
+    btn.addEventListener('click', () => open(el));
+    (el.querySelector('.links, .btn-row') || el).appendChild(btn);
+
+    /* de hele kaart is klikbaar, behalve de links en knoppen erin */
+    el.classList.add('is-clickable');
+    el.addEventListener('click', e => {
+      if (e.target.closest('a, button')) return;
+      open(el);
+    });
+  });
+
+  $('.modal-close').addEventListener('click', () => dialog.close());
+  /* klik naast de popup (op de achtergrond) sluit hem */
+  dialog.addEventListener('click', e => { if (e.target === dialog) dialog.close(); });
+})();
+
 /* CONTACTFORMULIER: opent het mailprogramma met naam, e-mail en bericht ingevuld */
 (function () {
   const form = document.getElementById('contactForm');
